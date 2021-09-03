@@ -18,16 +18,15 @@ $answer["回答4"] = "東京";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>php課題1-3</title>
 </head>
 <body>
+  <!-- 問題部分 -->
+  <h1><?php echo array_keys($question)[0]."\t".$question["問題"]; ?></h1>
 
-  <?php foreach( $question as $key => $value ){ ?>
-    <h1><?php  echo "{$key}"."\t"."{$value}"; ?></h1>
-  <?php  } ?>
-
+  <!-- 回答部分 -->
   <?php foreach( $answer as $key => $value ){ ?>
-    <p><?php  echo "{$key}"."\t"."{$value}"; ?>  </p>
+    <p><?php  echo "{$key}"."\t"."{$value}"; ?></p>
   <?php  } ?>
   
 </body>
